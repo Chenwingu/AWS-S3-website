@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header img {
+            width: 20%;
+            height: 100px;
+            object-fit: scale-down;
+            float: right;
+        }
+
+        .content {
+            margin: 15px;
+        }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
+        .main-content {
+            width: 70%;
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="main-content">
+        <div id="about" class="content">
+            <h2>About</h2>
+            <p>Welcome to Chenwi's space! Educator turned DevOps Engineer, I focus on automation, CI/CD, and tools like Docker, Kubernetes, Jenkins, Terraform, and Cloud technologies for efficient software solutions. Here, you’ll find insights on DevOps, Cloud Computing, and more. Stay tuned for the latest trends in the DevOps world. Let’s embark on this learning journey together!</p>
+        </div>
+        <div id="contact" class="content">
+            <h2>Contact</h2>
+            <p>Contact me at <a href="https://www.linkedin.com/in/chenwingu" style="color: blue; text-decoration: underline;">LinkedIn</a></p>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="portfolio_banner.png" alt="Banner">
+    </div>
+    <footer>
+        © 2024 Chenwi Ngu
+    </footer>
+</body>
+</html>
+
+
