@@ -24,7 +24,7 @@ G𝐢t𝐇u𝐛 𝐒e𝐜r𝐞t𝐬🔒 Create secrets in your GitHub Repository
 
 # R𝐮n T𝐞r𝐫a𝐟o𝐫m C𝐨m𝐦a𝐧d𝐬
 
-𝐒e𝐭t𝐢n𝐠 𝐔p G𝐢t𝐇u𝐛 𝐀c𝐭i𝐨n𝐬🎬 Create the GitHub Actions by creating a file in your GitHub repository (.github/workflows/pipeline.yml)
+𝐒e𝐭t𝐢n𝐠 𝐔p G𝐢t𝐇u𝐛 𝐀c𝐭i𝐨n𝐬🎬 Create the GitHub Actions by creating a file in your GitHub repository [pipeline.yml](https://github.com/Chenwingu/AWS-S3-website/blob/main/.github/workflows/pipeline.yml)
 
 **🤔 Adding Terraform configuration to GitHub Actions or other CI/CD Pipelines enhances visibility, traceability, repeatability, and simplicity.**
 **Triggered the workflow:** Terraform changes will only be applied when there is a push event on the main branch.
