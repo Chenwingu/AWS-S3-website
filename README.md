@@ -1,6 +1,6 @@
 # AWS S3 + CLOUDFRONT + TERRAFORM + GITHUB ACTIONS + OIDC PROVIDER
 
-![image](https://github.com/Chenwingu/HA-ec2/assets/103339990/2c6ac41d-2dee-451f-b00b-bdf68f889d96)
+![image](https://github.com/Chenwingu/AWS-S3-website/blob/main/aws-s3-architecture.png)
 
 # 𝐈n𝐭r𝐨d𝐮c𝐭i𝐨n 
 Secure deployment of static website on AWS S3 + AWS CloudFront using Terraform from GitHub Actions with OpenID Connect. The process leverages the GitOps approach for pipeline automation. Instead of storing AWS API Keys and Secrets Keys in GitHub secrets, we make it more secure by using GitHub OIDC Provider.
