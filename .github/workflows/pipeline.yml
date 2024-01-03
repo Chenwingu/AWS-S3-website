@@ -3,12 +3,12 @@ name: Automate Provisioning
 on:
   push:
     paths:
-      - 's3_files/src/**'
+      - 'src/**'
     branches:
       - main
   pull_request:
     paths:
-      - 's3_files/src/**'
+      - 'src/**'
 permissions:
       id-token: write # for aws oidc connection
       contents: read   # for actions/checkout
@@ -24,7 +24,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: s3_files
+        working-directory: .
     steps:
 
     - name: Checkout Repo
