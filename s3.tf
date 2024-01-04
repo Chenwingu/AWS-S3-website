@@ -19,7 +19,7 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
         "Sid": "AllowTrustEntity",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::617420245895:role/oidc-terraform-aws-s3-website-role"
+          "AWS": "arn:aws:iam::631420045995:role/oidc-terraform-aws-s3-website-role"
         },
         "Action": [
           "s3:GetObject"
@@ -38,7 +38,7 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
         "Resource": "arn:aws:s3:::portfolio-aws-s3/*",
         "Condition": {
           "StringEquals": {
-            "aws:SourceArn": "arn:aws:cloudfront::617420245895:distribution/${aws_cloudfront_distribution.s3_website.id}"
+            "aws:SourceArn": "arn:aws:cloudfront::631420045995:distribution/${aws_cloudfront_distribution.s3_website.id}"
           }
         }
       }
