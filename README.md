@@ -34,5 +34,5 @@ G𝐢t𝐇u𝐛 𝐒e𝐜r𝐞t𝐬🔒 Create secrets in your GitHub Repository
 
 The functionality and security of the static website hosted on AWS can be further enhanced with other AWS services including Route 53, AWS Certificate Manager, and WAF.
  
-Checkout demo [link](https://medium.com/@chenwingu/securely-deploy-static-website-on-aws-s3-aws-cloudfront-using-terraform-from-github-actions-with-ac5e2060c33a)
+Please checkout project tutorial [link](https://medium.com/@chenwingu/securely-deploy-static-website-on-aws-s3-aws-cloudfront-using-terraform-from-github-actions-with-ac5e2060c33a)
 
