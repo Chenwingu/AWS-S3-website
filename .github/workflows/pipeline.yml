@@ -1,4 +1,4 @@
-name: Automate Provisioning
+name: Automate Provisioning of AWS S3 Static website
 
 on:
   push:
