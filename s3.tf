@@ -1,7 +1,7 @@
 ### Creating the S3 bucket ###
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "portfolio-aws-s3"
+  bucket = "Your-Bucket-Name"
   force_destroy = true
   lifecycle {
     prevent_destroy = false
@@ -19,13 +19,13 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
         "Sid": "AllowTrustEntity",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::631420045995:role/oidc-terraform-aws-s3-website-role"
+          "AWS": "arn:aws:iam::Your-Account-ID:role/Name-Role"
         },
         "Action": [
           "s3:GetObject"
         ],
         "Resource": [
-          "arn:aws:s3:::portfolio-aws-s3/*"
+          "arn:aws:s3:::Your-Bucket-Name/*"
         ]
       },
       {
@@ -35,10 +35,10 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
           "Service": "cloudfront.amazonaws.com"
         },
         "Action": "s3:GetObject",
-        "Resource": "arn:aws:s3:::portfolio-aws-s3/*",
+        "Resource": "arn:aws:s3:::Your-Bucket-Name/*",
         "Condition": {
           "StringEquals": {
-            "aws:SourceArn": "arn:aws:cloudfront::631420045995:distribution/${aws_cloudfront_distribution.s3_website.id}"
+            "aws:SourceArn": "arn:aws:cloudfront::Your-Account-ID:distribution/${aws_cloudfront_distribution.s3_website.id}"
           }
         }
       }
